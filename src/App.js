@@ -7,6 +7,7 @@ import Layout from "components/Layout";
 import Header from "components/Header";
 import LeftBar from "components/LeftBar";
 import CentralPane from "components/CentralPane";
+import Footer from "components/Footer";
 
 const Dialogs = lazy(() =>
     import(/* webpackChunkName: "Dialogs" */ "components/Dialogs")
@@ -29,6 +30,7 @@ const App = () => {
                     </Switch>
                 </Suspense>
             </CentralPane>
+            <Footer />
         </Layout>
     );
 };
